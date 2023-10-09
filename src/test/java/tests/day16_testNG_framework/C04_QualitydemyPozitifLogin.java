@@ -25,5 +25,6 @@ public class C04_QualitydemyPozitifLogin {
         Assert.assertTrue(qualitydemyPage.basariliGirisElementi.isDisplayed());
 
         Driver.closeDriver();
+
     }
 }
