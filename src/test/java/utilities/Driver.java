@@ -16,7 +16,7 @@ public class Driver {
      TestBase yerine Driver class'inda static 2 method ile
      driver olusturma ve kapatma islemlerini yapmayi tercih etmistir
      */
-    static WebDriver driver;
+    static WebDriver driver; // biz deger atamadigimiz icin Java default olarak null point eder
     public static WebDriver getDriver(){
 
         WebDriverManager.chromedriver().setup();
