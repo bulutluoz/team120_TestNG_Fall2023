@@ -13,7 +13,7 @@ public class C05_QualitydemyNegatifLoginTesti {
     @Test
     public void gecersizPasswordTest(){
 
-        Driver.getDriver().get("https://www.qualitydemy.com/ ");
+        Driver.getDriver().get("https://www.qualitydemy.com/");
 
         qualitydemyPage= new QualitydemyPage();
         qualitydemyPage.ilkLoginLinki.click();
@@ -30,7 +30,7 @@ public class C05_QualitydemyNegatifLoginTesti {
 
     @Test
     public void gecersizEmailTesti(){
-        Driver.getDriver().get("https://www.qualitydemy.com/ ");
+        Driver.getDriver().get("https://www.qualitydemy.com/");
 
         qualitydemyPage= new QualitydemyPage();
         qualitydemyPage.ilkLoginLinki.click();
