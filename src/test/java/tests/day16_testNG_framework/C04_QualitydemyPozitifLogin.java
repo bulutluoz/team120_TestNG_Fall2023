@@ -1,5 +1,6 @@
 package tests.day16_testNG_framework;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QualitydemyPage;
 import utilities.Driver;
@@ -21,5 +22,8 @@ public class C04_QualitydemyPozitifLogin {
         //5- Login butonuna basarak login olun
         qualitydemyPage.loginButonu.click();
         //6- Basarili olarak giris yapilabildigini test edin
+        Assert.assertTrue(qualitydemyPage.basariliGirisElementi.isDisplayed());
+
+        Driver.closeDriver();
     }
 }
