@@ -23,4 +23,7 @@ public class FacebookPage {
     @FindBy(xpath = "//*[@*='Allow all cookies']")
     public WebElement cookiesKabulButonu;
 
+    @FindBy(xpath = "//div[@class='_9ay7']")
+    public WebElement girisYapilamadiYaziElementi;
+
 }

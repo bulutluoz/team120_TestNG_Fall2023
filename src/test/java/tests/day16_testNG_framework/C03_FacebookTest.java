@@ -1,6 +1,7 @@
 package tests.day16_testNG_framework;
 
 import com.github.javafaker.Faker;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FacebookPage;
 import utilities.Driver;
@@ -29,6 +30,9 @@ public class C03_FacebookTest {
 
         //4- Basarili giris yapilamadigini test edin
 
+        Assert.assertTrue(facebookPage.girisYapilamadiYaziElementi.isDisplayed());
+        ReusableMethods.tumSayfaFotografCek("Facebook");
 
+        Driver.closeDriver();
     }
 }
