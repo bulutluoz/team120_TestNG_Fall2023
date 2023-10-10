@@ -19,6 +19,12 @@ public class Driver {
      TestBase yerine Driver class'inda static 2 method ile
      driver olusturma ve kapatma islemlerini yapmayi tercih etmistir
      */
+
+    private Driver(){
+        // Bu constructor default constructor ile ayni islevi yapan parametresiz constructor'dir
+        // buna erisimi kontrol edebilecegimiz icin bu constructor'i olusturduk
+    }
+
     static WebDriver driver; // biz deger atamadigimiz icin Java default olarak null point eder
     public static WebDriver getDriver(){
 
@@ -53,10 +59,6 @@ public class Driver {
 
         return driver;
     }
-
-
-
-
 
     public static void closeDriver(){
         if (driver != null){
