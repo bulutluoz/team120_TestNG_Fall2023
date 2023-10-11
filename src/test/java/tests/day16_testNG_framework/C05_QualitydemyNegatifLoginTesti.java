@@ -10,7 +10,7 @@ public class C05_QualitydemyNegatifLoginTesti {
 
     QualitydemyPage qualitydemyPage;
 
-    @Test
+    @Test(groups = {"smoke","regression"})
     public void gecersizPasswordTest(){
 
         Driver.getDriver().get("https://www.qualitydemy.com/");
@@ -28,7 +28,7 @@ public class C05_QualitydemyNegatifLoginTesti {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = {"smoke","e2e1"})
     public void gecersizEmailTesti(){
         Driver.getDriver().get("https://www.qualitydemy.com/");
 
@@ -43,7 +43,7 @@ public class C05_QualitydemyNegatifLoginTesti {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = {"e2e1","regression"})
     public void gecersizEmailPasswordTesti(){
         Driver.getDriver().get("https://www.qualitydemy.com/ ");
 

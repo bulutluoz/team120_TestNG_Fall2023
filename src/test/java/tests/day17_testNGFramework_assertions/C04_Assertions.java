@@ -9,7 +9,7 @@ import utilities.Driver;
 
 public class C04_Assertions {
 
-    @Test
+    @Test(groups = {"regression"})
     public void test01(){
         // amazon anasayfaya gidelim
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));

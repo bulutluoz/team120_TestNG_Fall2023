@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class C01_DriverClassKullanimi {
 
-    @Test
+    @Test(groups = {"smoke"})
     public void amazonTest(){
 
         // amazon'a gidelim
@@ -20,7 +20,7 @@ public class C01_DriverClassKullanimi {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = {"smoke","regression"})
     public void youtubeTesti(){
 
         Driver.getDriver().get("https://www.youtube.com");
