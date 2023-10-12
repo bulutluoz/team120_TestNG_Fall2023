@@ -44,7 +44,7 @@ public class C01_RaporluTest extends TestBaseRapor {
 
         // ilk urun isminde aranacak kelime bulundugunu test edelim
 
-        String expectedUrunIcerik = ConfigReader.getProperty("amazonAranacakKelime2");
+        String expectedUrunIcerik = ConfigReader.getProperty("amazonAranacakKelime");
         String actualIsim = amazonPage.ilkUrunIsimElementi.getText();
         Assert.assertTrue(actualIsim.contains(expectedUrunIcerik));
         extentTest.pass("ilk urun isminde aranan kelime bulundugunu test eder");
