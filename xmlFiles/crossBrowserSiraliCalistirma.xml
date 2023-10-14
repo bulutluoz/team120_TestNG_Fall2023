@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="cross browser sirali calistirma">
+
+    <test name="chrome ile calisacak testler">
+        <parameter name="browser" value="chrome"></parameter>
+
+    </test>
+
+    <test name="firefox ile calisacak testler">
+        <parameter name="browser" value="firefox"></parameter>
+
+    </test>
+</suite>
+
+    <!--
+    Cross browser icin framework'umuzde duzenlemeler yapmamiz gerekir
+
+    1- xml dosyasinda farkli browser'lar ile calistirmak isetdegimiz
+       dosyalari, farkli test tag'lari altinda secelim.
+    2- her browser icin hazirladigimiz test'lere parapetre olarak
+       browser'lari atayalim
+    3- bizim parameter olarak xml'e yazdigimiz browser,
+       @Parameters notasyonu sayesinde TestBaseCross class'inda okunur
+    4- TestBaseCross xml dosyasindan parametre olarak aldigi bowser'i
+       kullanip DriverCross class'inda istenen browser ile WebDriver olusturup
+       "driver" objesine kaydeder
+    5- Cross browser testler ozel duzenleme ile olusturdugumuz "driver"i kullanacaklari icin
+       page sayfasindaki locate'leri kullanamazlar,
+       (page sayfalarinda Driver class'indaki webDriver kullanildigi icin)
+       locate'ler cross browser ile calisacak test method'larinda yapilmalidir
+       (eski usul)
+
+       Cross browser testler
+       framework'deki tum testler icin degil
+       ozel olarak belirlenmis ve duzenlenmis
+       sinirli sayidaki test icin kullanilir
+    -->
