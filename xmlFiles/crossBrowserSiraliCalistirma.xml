@@ -4,12 +4,16 @@
 
     <test name="chrome ile calisacak testler">
         <parameter name="browser" value="chrome"></parameter>
-
+        <packages>
+            <package name="tests.day20_crossBrowserCalisacakTestler"></package>
+        </packages>
     </test>
 
     <test name="firefox ile calisacak testler">
         <parameter name="browser" value="firefox"></parameter>
-
+        <packages>
+            <package name="tests.day20_crossBrowserCalisacakTestler"></package>
+        </packages>
     </test>
 </suite>
 
